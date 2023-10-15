@@ -1,0 +1,125 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="cf8956eab90e4ee5820ac92f42cef566"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="c49270bd91f844ebb127b1bef3947bbd"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="060574ccb94e4eb6917f90f5f3dc3e63"
+				serviceId="nabu.providers.keystore.persisted.crud.keystore.services.list"
+				resultName="resulteadb0222be7e44c9a4adca877863f7a7"
+				temporaryMapping="true"
+				x="98"
+				y="90"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="3ee78660c3a8444ab5b45694d2852993"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/keystoreAlias</from>
+				<to>filter/name[0]</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="0f7ad1ff6caa421f8acd9c5ea635abc4"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>resulteadb0222be7e44c9a4adca877863f7a7/results[0]</from>
+			<to>keystore</to>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="1713f4a961164ccba87abfc2ec8ae2be"
+			label="keystore"
+			lineNumber="3">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="7b5a6bdce57b4e038044038a43835023"
+				serviceId="nabu.providers.keystore.persisted.crud.keystoreEntry.services.list"
+				resultName="result8fed7c5265314eb19db66dbf16dfa38c"
+				temporaryMapping="true"
+				x="225"
+				y="117"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="c2ad81f41d834c8395a1ae88c0a0f3d7"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>keystore/id</from>
+				<to>filter/keystoreId[0]</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="e8e74d66159849d8a706eda93d43af8d"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result8fed7c5265314eb19db66dbf16dfa38c/results</from>
+			<to>entries</to>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.For"
+			disabled="false"
+			id="ed5c57e4cee44ca6a9d6df251fa00dbb"
+			lineNumber="4"
+			variable="entry"
+			into="output/entries">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+				disabled="false"
+				id="684bd67b4aad4274988599e351eece22"
+				lineNumber="5">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="948ab44ba90a4fe9a0ff956033758b90"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>entry/type</from>
+				<to>output/entries[0]/type</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="410dab9758634daea09173c6b9578fd3"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>entry/alias</from>
+				<to>output/entries[0]/alias</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="2029746275a942a09f71299aa7674171"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>entry/content</from>
+				<to>output/entries[0]/content</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="beb5cf559fb2403ca554419f3cfad4cd"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>entry/password</from>
+				<to>output/entries[0]/password</to>
+			</steps>
+		</steps>
+		<query>entries</query>
+	</steps>
+</sequence>

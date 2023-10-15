@@ -1,0 +1,5 @@
+<structure interface="be.nabu.utils.security.basic.KeyStorePersistanceManager.get" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure collectionName="keystores" definition="nabu.providers.keystore.persisted.crud.keystore.types.output" minOccurs="0" name="keystore"/>
+</structure>

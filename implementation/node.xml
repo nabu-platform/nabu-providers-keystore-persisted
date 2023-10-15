@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.keystore.persistance.KeyStorePersistanceArtifactManager" created="2023-10-14T14:35:10.144+02:00" lastModified="2023-10-15T10:23:32.283+02:00" leaf="true" version="5">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.providers.keystore.persisted.providers.delete</references>
+    <references>nabu.providers.keystore.persisted.providers.getAll</references>
+    <references>nabu.providers.keystore.persisted.providers.get</references>
+    <references>nabu.providers.keystore.persisted.providers.set</references>
+</node>

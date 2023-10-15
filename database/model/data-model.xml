@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataModel>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.providers.keystore.persisted.database.types.keystore</type>
+        <x>208</x>
+        <y>81</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.providers.keystore.persisted.database.types.keystoreEntry</type>
+        <x>931</x>
+        <y>174</y>
+    </entries>
+</dataModel>

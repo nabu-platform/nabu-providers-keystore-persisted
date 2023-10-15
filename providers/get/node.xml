@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2023-10-14T14:31:25.111+02:00" lastModified="2023-10-14T14:39:31.064+02:00" leaf="true" version="4">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.providers.keystore.persisted.crud.keystore.services.list</references>
+    <references>be.nabu.utils.security.basic.KeyStoreEntry</references>
+    <references>be.nabu.utils.security.basic.KeyStorePersistanceManager.get</references>
+    <references>nabu.providers.keystore.persisted.crud.keystoreEntry.services.list</references>
+    <references>java.lang.String</references>
+    <references>nabu.providers.keystore.persisted.crud.keystore.types.output</references>
+</node>

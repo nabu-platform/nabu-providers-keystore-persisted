@@ -10,7 +10,7 @@
     <filters>
         <caseInsensitive>false</caseInsensitive>
         <key>name</key>
-        <operator>=</operator>
+        <operator>=~</operator>
         <or>false</or>
         <input>true</input>
         <vary>false</vary>

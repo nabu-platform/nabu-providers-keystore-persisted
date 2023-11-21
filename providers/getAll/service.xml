@@ -24,7 +24,7 @@
 					optional="false"
 					fixedValue="false">
 				<from>input/keystoreAlias</from>
-				<to>filter/name[0]</to>
+				<to>filter/name</to>
 			</steps>
 		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Link"

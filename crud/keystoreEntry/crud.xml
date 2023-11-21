@@ -11,7 +11,7 @@
     <filters>
         <caseInsensitive>false</caseInsensitive>
         <key>alias</key>
-        <operator>=</operator>
+        <operator>=~</operator>
         <or>false</or>
         <input>true</input>
         <vary>false</vary>

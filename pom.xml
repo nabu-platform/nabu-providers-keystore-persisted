@@ -11,20 +11,24 @@
 	</parent>
 	<dependencies>
 		<dependency>
-			<groupId>nabu.web</groupId>
-			<artifactId>application</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>nabu.types</groupId>
 			<artifactId>structure</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>nabu.services</groupId>
-			<artifactId>jdbc</artifactId>
+			<artifactId>vm</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>nabu.services</groupId>
-			<artifactId>vm</artifactId>
+			<artifactId>crud</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>nabu.types</groupId>
+			<artifactId>model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>nabu.misc</groupId>
+			<artifactId>keystore</artifactId>
 		</dependency>
 	</dependencies>
 </project>
